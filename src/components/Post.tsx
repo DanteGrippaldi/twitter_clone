@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "@/hooks";
 import {
   EllipsisHorizontalIcon,
   ChatBubbleLeftIcon,
@@ -16,10 +16,20 @@ interface Post {
   userId: number;
 }
 
+type User = {
+  image: string;
+  firstName: string;
+  username: string;
+};
+
 const Post = ({ body, reactions, userId }: Post) => {
-  const feed = useSelector((state) => state.post.value);
-  const userName = useSelector((state) => state.user.value);
-  const [user, setUser] = useState(0);
+  const feed = useAppSelector((state) => state.post.value);
+  const userName = useAppSelector((state) => state.user.value);
+  const [user, setUser] = useState<User>({
+    image: "",
+    firstName: "",
+    username: "",
+  });
 
   const fetchUser = async () => {
     const url = `https://dummyjson.com/users/${userId}`;
