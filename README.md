@@ -24,7 +24,7 @@ This project is strictly intended for my portfolio. This project is intended to 
 ## Live Demo
 
 I hosted this site using netlify -- due to the free hosting plan, please allow at least 30 seconds for all the relevent data to be loaded correctly on the page :)
-Live Demo: [`Facebook-clone`](https://splendid-puppy-700377.netlify.app/)
+Live Demo: [`Twitter Clone`](https://splendid-puppy-700377.netlify.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
