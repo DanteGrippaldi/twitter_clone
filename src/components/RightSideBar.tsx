@@ -3,10 +3,24 @@ import UserCard from "./UserCard";
 
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 const RightSideBar = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<Users>([
+    {
+      firstName: "",
+      lastName: "",
+      username: "",
+      image: "",
+    },
+  ]);
 
-  /* redux can store global state of users so i dont have to fetch 
-      multiple times */
+  interface User {
+    firstName: string;
+    lastName: string;
+    username: string;
+    image: string;
+  }
+
+  type Users = User[];
+
   const fetchUsers = async () => {
     const url = "https://dummyjson.com/users";
     const response = await fetch(url);
