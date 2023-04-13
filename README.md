@@ -1,3 +1,26 @@
+# Twitter Clone Application
+
+## Technology Used
+
+* Next.js
+* TypeScript
+* TailwindCSS
+* Redux
+
+## Data Source
+I built this project pulling data from the following API: [`https://dummyjson.com/`](https://dummyjson.com/)
+
+## Installation
+To run this application locally, please follow theses steps: 
+
+1. Clone this repository: [`https://github.com/DanteGrippaldi/twitter_clone.git`](https://github.com/DanteGrippaldi/twitter_clone.git)
+2. Install dependancies: `npm install`
+3. Start the development server: `npm run dev`
+
+# NOTE
+
+This project is strictly intended for my portfolio. This project is intended to display my ability to copy designs and reflect those designs within my code. With that being said, I am aware of some bugs within the application :), this is an ongoing project and I will be getting to them.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
