@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useAppSelector } from "@/hooks";
 import toast from "react-hot-toast";
 import { setPosts, addPost } from "@/features/PostSlice";
 import { UserIcon } from "@heroicons/react/24/solid";
@@ -14,9 +15,8 @@ import {
 } from "@heroicons/react/24/outline";
 import Post from "./Post";
 const Feed = () => {
-  /* const [posts, setPosts] = useState([]); */
   const [textInput, setTextInput] = useState("");
-  const posts = useSelector((state) => state.post.value);
+  const posts = useAppSelector((state) => state.post.value);
 
   const dispatch = useDispatch();
 
@@ -92,12 +92,12 @@ const Feed = () => {
             <UserIcon className="w-8 h-8 text-gray-500" />
           </div>
 
-          <div className="p-2">
+          <div className="p-2 w-full">
             <input
               type="text"
               value={textInput}
               placeholder="What's happening?"
-              className="p-2 outline-none placeholder:text-xl"
+              className="p-2 outline-none w-full placeholder:text-xl"
               onChange={(e) => setTextInput(e.target.value)}
             />
             <div

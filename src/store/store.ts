@@ -5,6 +5,10 @@ import userSlice from "../features/UserSlice";
 export const store = configureStore({
   reducer: {
     post: postSice,
-    user: userSlice
+    user: userSlice,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
+
+export type AppDispatch = typeof store.dispatch;
