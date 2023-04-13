@@ -1,12 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+interface Post {
+  body: string;
+  id: number;
+  userId: number;
+  reactions: number;
+  username?: string;
+  fullName?: string;
+}
+
+interface Posts {
+  value: Post[];
+}
+
+const initialState: Posts = {
   value: [
     {
       body: "",
       id: 0,
       userId: 0,
       reactions: 0,
+      username: "",
+      fullName: "",
     },
   ],
 };
