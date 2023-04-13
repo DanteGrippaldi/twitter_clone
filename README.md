@@ -21,6 +21,11 @@ To run this application locally, please follow theses steps:
 
 This project is strictly intended for my portfolio. This project is intended to display my ability to copy designs and reflect those designs within my code. With that being said, I am aware of some bugs within the application :), this is an ongoing project and I will be getting to them.
 
+## Live Demo
+
+I hosted this site using netlify -- due to the free hosting plan, please allow at least 30 seconds for all the relevent data to be loaded correctly on the page :)
+Live Demo: [`Facebook-clone`](https://splendid-puppy-700377.netlify.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
