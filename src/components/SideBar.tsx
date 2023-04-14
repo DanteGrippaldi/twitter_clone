@@ -13,7 +13,7 @@ import {
 
 const SideBar = () => {
   return (
-    <div className="h-1 sticky top-0">
+    <div className="hidden md:inline h-1 sticky top-0">
       <div className="p-3 pl-4 md:pl-12 lg:pl-36 h-screen md:w-[120px] lg:w-[400px] border-r-2 border-gray-100 flex flex-col justify-between">
         <div className="">
           {/* logo */}
